@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: #D7D4FF;
+}
+
+.hero {
+  height:250px;
+  display: flex;
+}
+
+.hero div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+
+h1, h3 {
+  width: 500px;
+  display: block;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+  color: #2B2B2B;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  color: #555555;
+}
+
+img {
+  max-width: 100%;
+}
+button {
+  width: 155px;
+  height: 40px;
+  background: #6C63FF;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  background-color: #F9F9F9 !important;
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 44px 0;
+}
+
+.card {
+  height: 423px;
+  width: calc(100% / 4);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+}
+
+.card div {
+  height: 50%;
+}
+
+#box1 {
+  background-color: #6C63FF;
+}
+
+#box2 {
+  background-color: #FF6363;
+}
+
+#box3 {
+  background-color: #555555;
+}
+
+#box4 {
+  background-color: turquoise;
+}
+
+#box5 {
+  background-color: #63FF73;
+}
+
+#box6 {
+  background-color:#FFDD63;
+}
+
+
+.card__text {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B2B2B;
+}
+
+.card__description {
+  width: 282px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #555555;
+  font-family: 'Merriweather', serif;
+}
+
+@media(max-width: 600px){
+  .hero, .cards {
+    flex-direction: column;
+    padding: 24px;
+    gap: 15px;
+    height: auto;
+  }
+
+  .hero div, .card {
+    width: 100% !important;
+  }
+
+  h1, h3 {
+    width: auto;
+    display: block;
+  }
+
+  p {
+    width: auto !important;
+  }
+}
+
+@media(min-width: 1400px){
+  .hero, .cards {
+    padding: 140px 260px;
+  }
+}
